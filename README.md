@@ -1,5 +1,5 @@
 # photoshopCompositionComposer
-This script will create unique compositions out of members contained within the top-level document groups, and save them into a desired location both as a `png`- and a `psd`-file.
+This script will create unique compositions out of members contained within the top-level document groups, and save them into a desired location both as a `png`- and a `psd`-file. Tested on Photoshop CC 2015.
 
 ## Usage
 1. See the Example and the Preview below to learn how it works

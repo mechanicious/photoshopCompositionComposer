@@ -7,7 +7,7 @@ This script will create unique compositions out of members contained within the 
 3. Open your project and navigate to `File > Scripts > Browse...`
 4. Browse and load the downloaded `jsx` file
 
-Note: use prefix `__` for top-level group names to exlude groups from the composition composing process. E.g. `__ignoreThisGroup`
+Note: use prefix `__` (double underscore) for top-level group names to exlude groups from the composition composing process. E.g. `__ignoreThisGroup`
 
 ## Example
 **Layers**

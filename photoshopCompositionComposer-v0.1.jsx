@@ -117,12 +117,15 @@ function combine() {
         if (!overwritePreExistingPngFlag) {
         var fileHandle = File(fileFullPath + '.png');
           if (fileHandle.exists) {
-            // Skip iteration as the file already exists (to save time)
-            continue;
+            // Do nothing as the file already exists (to save time)
+          } else {
+              saveDocumentAsPNG(fileFullPath);
           }
+        } else {
+            // Just save the file regardless of if it exists as we are always overwriting
+           saveDocumentAsPNG(fileFullPath); 
         }
 
-        saveDocumentAsPNG(fileFullPath);
         if(includePSDFiles) saveDocumentAsPSD(fileFullPath);
       }
 }

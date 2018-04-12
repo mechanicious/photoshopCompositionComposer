@@ -11,25 +11,11 @@ Note: use prefix `__` (double underscore) for top-level group names to exlude gr
 
 ## Example
 **Layers**
- * `Group` animals.
-  * `Layer` dog_
-  * `Group` cat_
- * `Group` background.
-  * `Layer` sea_
-  * `Group` space_
-  * `Layer` underWater_
 
 ![](https://i.imgur.com/zPSeHj8.png)
 
 
 **Resulting Compositions**
-
-1. animals.dog_background.sea_
-2. animals.dog_background.space_
-3. animals.dog_background.underWater_
-4. animals.cat_background.sea_
-5. animals.cat_background.space_
-6. animals.cat_background.underWater_
 
 ![](https://i.imgur.com/6cw6Pu5.png)
 ![](https://i.imgur.com/wPc1FLW.png)

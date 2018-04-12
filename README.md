@@ -19,7 +19,7 @@ Note: use prefix `__` (double underscore) for top-level group names to exlude gr
   * `Group` space_
   * `Layer` underWater_
 
-![](https://raw.githubusercontent.com/mechanicious/photoshopCompositionComposer/gh-pages/layersConfiguration-v0.1.png)
+![](https://i.imgur.com/zPSeHj8.png)
 
 
 **Resulting Compositions**
@@ -31,5 +31,5 @@ Note: use prefix `__` (double underscore) for top-level group names to exlude gr
 5. animals.cat_background.space_
 6. animals.cat_background.underWater_
 
-## Preview
-![](https://raw.githubusercontent.com/mechanicious/photoshopCompositionComposer/gh-pages/saveAllCombinations-v0.1.gif)
+![](https://i.imgur.com/6cw6Pu5.png)
+![](https://i.imgur.com/wPc1FLW.png)

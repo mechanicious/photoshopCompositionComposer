@@ -97,7 +97,10 @@ function combine() {
 
       var includePSDFiles = confirm('Would you like to include corresponding PSD documents?')
 
+      var overwritePreExistingPngFlag = confirm('Would you like to overwrite pre-existing PNG files?')
+
       for(var i = 0; i < artLayerCollectionCollectionCombinations.length; i++) {
+
         hideAllArtLayers();
         var artLayerNames = [];
         for(var z = 0; z < artLayerCollectionCollectionCombinations[i].length; z++) {
@@ -106,8 +109,24 @@ function combine() {
           artLayerNames.push(artLayer.parent.name);
           artLayerNames.push(artLayer.name);
         }
-        saveDocumentAsPNG(savePath + '/' + normalizeSaveFileName(artLayerNames.join('')).substr(0, 254));
-        if(includePSDFiles) saveDocumentAsPSD(savePath + '/' + normalizeSaveFileName(artLayer.parent.name + artLayerNames.join('')).substr(0, 254));
+
+        var fileFullPath = savePath + '/' + normalizeSaveFileName(artLayerNames.join('')).substr(0, 254);
+
+        // If this is false then we need to check before writing a file so we
+        // can skip pre-existing files
+        if (!overwritePreExistingPngFlag) {
+        var fileHandle = File(fileFullPath + '.png');
+          if (fileHandle.exists) {
+            // Do nothing as the file already exists (to save time)
+          } else {
+              saveDocumentAsPNG(fileFullPath);
+          }
+        } else {
+            // Just save the file regardless of if it exists as we are always overwriting
+           saveDocumentAsPNG(fileFullPath); 
+        }
+
+        if(includePSDFiles) saveDocumentAsPSD(fileFullPath);
       }
 }
 

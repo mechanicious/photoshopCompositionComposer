@@ -142,7 +142,7 @@ function normalizeSaveFileName(name) {
 }
 
 function saveDocumentAsPNG(path) {
-  app.activeDocument.saveAs(new File(path), new PNGSaveOptions());
+  app.activeDocument.saveAs(new File(path), new PhotoshopSaveOptions());
 }
 
 function saveDocumentAsPSD(path) {
